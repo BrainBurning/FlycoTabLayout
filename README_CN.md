@@ -1,5 +1,11 @@
 # FlycoTabLayout
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FlycoTabLayout-green.svg?style=true)](https://android-arsenal.com/details/1/2756)
+
+# 说明
+
+由于原作者已经很久没有维护此库了，一些bug和新的需求得不到解决，所以Fork了一份进行修改，后续的更改使用
+我自己的gradle依赖
+
+# 特性
 
 一个Android TabLayout库,目前有3个TabLayout
 
@@ -40,31 +46,12 @@
 
 >## Change Log
 
- > v2.0.0(2016-03-01)
-   - 删除了对FlycoRoundView库的依赖
-   - 新增方法getIconView和getTitleView(为了某些情况需要动态更新icon之类的)
-
- > v2.0.2(2016-04-23)
-   - 删除了对NineOldAnimation库依赖(仅支持3.0+)
+ > v1.0.0(2018-03-18)
+   - 添加 设置选中文字字体大小的属性
 
 ## Gradle
 
-```groovy
-dependencies{
-    compile 'com.android.support:support-v4:23.1.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.2@aar'
-    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:1.5.0@aar'
-}
-
-After v2.0.0(support 2.2+)
-dependencies{
-    compile 'com.android.support:support-v4:23.1.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
-}
-
-After v2.0.2(support 3.0+)
+```
 dependencies{
     compile 'com.android.support:support-v4:23.1.1'
     compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
@@ -95,6 +82,7 @@ dependencies{
 | tl_tab_space_equal |boolean| 设置tab大小等分
 | tl_tab_width |dimension| 设置tab固定大小
 | tl_textsize |dimension| 设置字体大小
+| tl_selected_text_size |dimension| 设置选中字体大小
 | tl_textSelectColor |color| 设置字体选中颜色
 | tl_textUnselectColor |color| 设置字体未选中颜色
 | tl_textBold |boolean| 设置字体加粗
@@ -107,10 +95,6 @@ dependencies{
 | tl_indicator_anim_duration |integer| 设置显示器动画时间(only for CommonTabLayout)
 | tl_indicator_bounce_enable |boolean| 设置显示器支持动画回弹效果(only for CommonTabLayout)
 | tl_indicator_width_equal_title |boolean| 设置显示器与标题一样长(only for SlidingTabLayout)
-
-## Dependence
-*   [NineOldAndroids](https://github.com/JakeWharton/NineOldAndroids)
-*   [FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
 
 ## Thanks
 *   [PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip)

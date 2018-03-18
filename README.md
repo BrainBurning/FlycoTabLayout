@@ -1,6 +1,7 @@
 # FlycoTabLayout
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FlycoTabLayout-green.svg?style=true)](https://android-arsenal.com/details/1/2756)
-#### [中文版](https://github.com/H07000223/FlycoTabLayout/blob/master/README_CN.md)
+#### [中文版](https://github.com/magical-xu/FlycoTabLayout/blob/master/README_CN.md)
+
+## Feature
 An Android TabLayout Lib has 3 kinds of TabLayout at present.
 
 * SlidingTabLayout: deeply modified from [PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip).
@@ -41,34 +42,14 @@ can be used freely with other widgets together.
 
 >## Change Log
 
- > v2.0.0(2016-03-01)
-   - remove the dependence of FlycoRoundView
-   - new added method getIconView and getTitleView
-
- > v2.0.2(2016-04-23)
-   - remove the dependence of NineOldAnimation(only support 3.0+)
-
+ > v1.0.0(2018-03-18)
+   - add attribute to set the text size when selected
 
 ## Gradle
 
-```groovy
+```
 dependencies{
-    compile 'com.android.support:support-v4:23.1.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.2@aar'
-    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:1.5.0@aar'
-}
-
-After v2.0.0
-dependencies{
-    compile 'com.android.support:support-v4:23.1.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
-}
-
-After v2.0.2(support 3.0+)
-dependencies{
-    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:support-v7:your version'
     compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
 }
 ```
@@ -97,6 +78,7 @@ dependencies{
 | tl_tab_space_equal |boolean| set tab space equal
 | tl_tab_width |dimension| set tab width
 | tl_textsize |dimension| set text size
+| tl_selected_text_size |dimension| set selected text size
 | tl_textSelectColor |color| set text select color
 | tl_textUnselectColor |color|  set text unselect color
 | tl_textBold |boolean| set text is bold 
