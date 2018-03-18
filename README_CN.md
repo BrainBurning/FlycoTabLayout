@@ -52,10 +52,17 @@
 ## Gradle
 
 ```
-dependencies{
-    compile 'com.android.support:support-v4:23.1.1'
-    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
-}
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+	dependencies {
+	    implementation 'com.android.support:appcompat-v7:your version'
+  	  implementation 'com.github.magical-xu:FlycoTabLayout:v1.0.0'
+  }
 ```
 
 ## Attributes
@@ -98,3 +105,4 @@ dependencies{
 
 ## Thanks
 *   [PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip)
+*   [FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)

@@ -21,6 +21,6 @@ android {
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile 'com.android.support:appcompat-v7:26.1.0'
-  compile project(':FlycoTabLayout_Lib')
+  implementation 'com.android.support:appcompat-v7:26.1.0'
+  implementation 'com.github.magical-xu:FlycoTabLayout:v1.0.0'
 }

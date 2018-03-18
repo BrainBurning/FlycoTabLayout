@@ -1,5 +1,6 @@
 # FlycoTabLayout
 #### [中文版](https://github.com/magical-xu/FlycoTabLayout/blob/master/README_CN.md)
+Modify from https://github.com/H07000223/FlycoTabLayout
 
 ## Feature
 An Android TabLayout Lib has 3 kinds of TabLayout at present.
@@ -48,10 +49,17 @@ can be used freely with other widgets together.
 ## Gradle
 
 ```
-dependencies{
-    compile 'com.android.support:support-v7:your version'
-    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
-}
+  allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+	dependencies {
+	    implementation 'com.android.support:appcompat-v7:your version'
+  	  implementation 'com.github.magical-xu:FlycoTabLayout:v1.0.0'
+  }
 ```
 
 ## Attributes
@@ -92,9 +100,6 @@ dependencies{
 | tl_indicator_bounce_enable |boolean| set indicator aniamtion with bounce effect(only for CommonTabLayout)
 | tl_indicator_width_equal_title |boolean| set indicator width same as text(only for SlidingTabLayout)
 
-## Dependence
-*   [NineOldAndroids](https://github.com/JakeWharton/NineOldAndroids)
-*   [FlycoRoundView](https://github.com/H07000223/FlycoRoundView)
-
 ## Thanks
 *   [PagerSlidingTabStrip](https://github.com/jpardogo/PagerSlidingTabStrip)
+*   [FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)
